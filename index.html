@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="player-controls">
+        <div class="button-controls">
+          <button class="play-prev player-icon"></button>
+          <button class="play player-icon"></button>
+          <button class="play-next player-icon"></button>
+        </div>
+        <div class="timeline">
+          <label class="timeline-track-label" for="timeline-track">Aqua Caelestis
+          </label>
+          <input class="timeline-track" type="range" min="0" max="100" value="0">
+        </div>
+
+        <div>
+          <span class="time-track">00:00</span> |
+          <span class="time-duration">00:39</span>
+        </div>
+        <div class="volume">
+          <button class="button-volume btn-volume"></button>
+        </div>
+        <input class="volume-track" type="range" min="0" max="100" value="50">
+      </div>
+      <ul class="play-list"></ul>
+    </div>
+    <div class="weather">
+      <input type="text" class="city" />
+      <i class="weather-icon owf"></i>
+      <div class="weather-error">
+        <span class="error"></span>
+      </div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind">
+        <span class="name-wind"></span>
+        <span class="speed-wind"></span>
+      </div>
+      <div class="humidity">
+        <span class="name-humidity"></span>
+        <span class="air-humidity"></span>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name" placeholder="[Enter Name]" />
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="pop-up hide">
+
+      <div class="settings__translate">
+        <p class="settings__translate-text">Language:</p>
+        <div class="translate__button">
+          <button>Русский</button>
+          <button>England</button>
+        </div>
+
+      </div>
+
+      <div class="settings__show">
+        <p class="settings__show-text">Show / hide:</p>
+        <ul class="settings__show-items">
+          <li class="settings__show-item">
+            <label for="settings-time" class="text time-label">Time</label>
+            <input type="checkbox" name="toggle" id="settings-time" class="settings" checked="" data-class="time">
+          </li>
+          <li class="settings__show-item">
+            <label for="settings-date" class="text date-label">Date</label>
+            <input type="checkbox" name="toggle" id="settings-date" class="settings" checked="" data-class="date">
+          </li>
+          <li class="settings__show-item">
+            <label for="settings-greeting" class="text greeting-label">Greeting</label>
+            <input type="checkbox" name="toggle" id="settings-greeting" class="settings" checked=""
+              data-class="greeting-container">
+          </li>
+          <li class="settings__show-item">
+            <label for="settings-quotes" class="text quotes-label">Quotes</label>
+            <input type="checkbox" name="toggle" id="settings-quotes" class="settings" checked="" data-class="quotes">
+          </li>
+          <li class="settings__show-item">
+            <label for="settings-weather" class="text weather-label">Weather</label>
+            <input type="checkbox" name="toggle" id="settings-weather" class="settings" checked="" data-class="weather">
+          </li>
+          <li class="settings__show-item">
+            <label for="settings-player" class="text player-label">Player</label>
+            <input type="checkbox" name="toggle" id="settings-player" class="settings" checked="" data-class="player">
+          </li>
+
+        </ul>
+      </div>
+    </div>
+    <button class="config"></button>
+
+    <div class="quote-block">
+      <button class="change-quote"></button>
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+  </footer>
+  <script type="module" src="js/script.js"></script>
+</body>
+
+</html>
